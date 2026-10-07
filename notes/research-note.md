@@ -55,12 +55,11 @@ WACC would be more defensible in a real engagement, and it is also the easiest l
 quietly tune until a number comes out nicely. One rate plus a full sensitivity grid is the
 more honest trade.
 
-Free cash flow is cash from operations less capital expenditure. Not "adjusted" free cash
-flow, not FCF before some category of spending the company would rather you ignored.
-Stock-based compensation stays as the non-cash add-back the cash flow statement makes it,
-which flatters the technology names — but the alternative is per-company judgement calls,
-and an inconsistent definition across a comparison table is worse than a generous one
-applied uniformly.
+Free cash flow is cash from operations less capital expenditure — no "adjusted" variant and
+no exclusions. Stock-based compensation stays as the non-cash add-back the cash flow
+statement makes it, which flatters the technology names. The alternative is per-company
+judgement calls, and one consistent definition is more useful in a comparison than eight
+tailored ones.
 
 ---
 
@@ -85,9 +84,9 @@ At 23× free cash flow, Exxon's price implies 8.1% growth against 13.1% delivere
 only negative gap in the set.
 
 The caveat matters more here than anywhere else: a ten-year FCF CAGR for an oil major is
-largely a statement about where the oil price sat at each endpoint. The window starts in
-2016, near a cyclical trough, which flatters the realised figure. This is the one line in
-the table I would not lean on without a longer window and a through-cycle normalisation.
+largely determined by where the oil price sat at each endpoint. The window starts in 2016,
+near a cyclical trough, which flatters the realised figure. This is the one line in the
+table I would not rely on without a longer window and a through-cycle normalisation.
 
 ### The defensive names carry the most demanding expectations
 
@@ -96,30 +95,28 @@ going on, and only one of them is about expectations.
 
 **Walmart's free cash flow is suppressed by deliberate investment.** Heavy spending on
 automation and e-commerce fulfilment runs through capital expenditure, so a mechanical
-CFO-minus-capex base penalises the company precisely for building the thing the market is
-paying for. The implied growth is real, but part of the measured gap is an artefact of
-treating investment as a permanent drag.
+CFO-minus-capex base penalises the company for the investment the market is paying for.
+The implied growth is real, but part of the measured gap comes from treating that
+investment as a permanent drag.
 
 **Coca-Cola's base is distorted by a one-off.** Its 3-year average FCF of $6.6B is
 depressed by a large IRS deposit, against a more typical $9–10B. Re-based nearer $9.5B,
 the implied growth falls to roughly 15% rather than 20.3% — still well above the 1.4% it
 has delivered, but a materially different number.
 
-That is the central limitation of mechanical extraction, and I would rather state it than
-let the table imply a precision it does not have: **the model cannot distinguish an
-unusual year from a trend.** Smoothing over three years reduces the problem; it does not
-solve it.
+That is the central limitation of mechanical extraction: **the model cannot distinguish an
+unusual year from a trend.** Smoothing over three years reduces the problem without solving
+it, and the table should be read with that in mind.
 
 ### Most of every valuation sits past the forecast horizon
 
 The terminal value accounts for **60% to 74%** of enterprise value in every case. Ten
 years of explicit forecasting is a minority of the answer everywhere, and at Nvidia's 74%
-the explicit period is close to decoration.
+it contributes little.
 
-This is the diagnostic most often left out of a DCF, and it should be read as a warning
-about the whole method rather than about these companies. A model in which three-quarters
-of the answer comes from a perpetuity formula is not forecasting a business; it is
-restating an assumption about the discount rate.
+This is the diagnostic most often left out of a DCF, and it is a warning about the method
+rather than about these companies. When three-quarters of the answer comes from a
+perpetuity formula, the model is largely restating an assumption about the discount rate.
 
 ### Nvidia cannot be assessed here
 
@@ -139,10 +136,10 @@ terminal growth fixed and moving only the discount rate across a range any analy
 defend gives **11.9% at 7% and 22.0% at 11%** — the implied figure nearly doubles on an
 assumption nobody can observe. The point estimate in the table is one cell of this grid.
 
-A conventional DCF would present the point estimate and call the grid a sensitivity
-appendix. Here the grid *is* the result: the honest claim is not "Apple's price implies
-17.4% growth" but "under assumptions a reasonable person might hold, Apple's price implies
-somewhere in this range, and the range is wide."
+A conventional DCF presents the point estimate and relegates the grid to a sensitivity
+appendix. Here the grid is the result. The defensible claim is not "Apple's price implies
+17.4% growth" but "under a reasonable range of assumptions, somewhere between 11.9% and
+22.0%".
 
 ---
 
