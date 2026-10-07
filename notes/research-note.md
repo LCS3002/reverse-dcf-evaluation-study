@@ -176,7 +176,7 @@ refinement of the discount rate.
 anecdote. Across five hundred, "what is the market asking of this company relative to its
 own history" becomes a cross-sectional signal that can be tested against subsequent
 returns — which is where this connects to the kind of work in
-[rsi-sentiment-study](https://github.com/LCS3002/rsi-sentiment-study).
+[rsi-sentiment-study](https://github.com/LCS3002/rsi-sentiment-trading-study).
 
 **Back-test the implied figure.** The honest test of whether any of this means anything:
 did companies with large positive gaps subsequently underperform? That is answerable with
