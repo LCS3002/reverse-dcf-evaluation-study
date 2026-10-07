@@ -1,5 +1,18 @@
+# Cached filings and prices — regenerate with `python -m valuation.run --force-data`
 data/
+
+# Results are committed so the note's exhibits render; only logs are noise
+results/*.log
+
+# Python
 __pycache__/
 *.py[cod]
 .pytest_cache/
 .venv/
+venv/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

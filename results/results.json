@@ -1,0 +1,2339 @@
+{
+  "as_of": "2026-10-07",
+  "assumptions": {
+    "discount_rate": 0.09,
+    "terminal_growth": 0.025,
+    "forecast_years": 10,
+    "fcf_smoothing_years": 3,
+    "history_years": 10,
+    "wacc_grid": [
+      0.07,
+      0.08,
+      0.09,
+      0.1,
+      0.11
+    ],
+    "terminal_growth_grid": [
+      0.015,
+      0.02,
+      0.025,
+      0.03,
+      0.035
+    ]
+  },
+  "companies": {
+    "AAPL": {
+      "entity": "Apple Inc.",
+      "price": 333.6300048828125,
+      "market_cap": 4929834723540.161,
+      "shares": 14776353000.0,
+      "net_debt": 35981000000.0,
+      "balance_sheet_date": "2025-09-27",
+      "base_fcf": 102386000000.0,
+      "latest_fcf": 98767000000.0,
+      "fcf_multiple": 48.149500161547095,
+      "history_years": 19,
+      "first_year": 2007,
+      "last_year": 2025,
+      "implied_growth": 0.17395428121089934,
+      "realised_growth": 0.08873988607019467,
+      "growth_gap": 0.08521439514070467,
+      "terminal_value_share": 0.6828216384782402,
+      "concepts": {
+        "cfo": "NetCashProvidedByUsedInOperatingActivities + NetCashProvidedByUsedInOperatingActivitiesContinuingOperations",
+        "capex": "PaymentsToAcquirePropertyPlantAndEquipment + PaymentsToAcquireProductiveAssets",
+        "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax + Revenues + SalesRevenueNet",
+        "cash": "CashAndCashEquivalentsAtCarryingValue",
+        "short_term_investments": "MarketableSecuritiesCurrent + AvailableForSaleSecuritiesCurrent",
+        "long_term_debt": "LongTermDebtNoncurrent + LongTermDebt",
+        "short_term_debt": "LongTermDebtCurrent",
+        "shares": "EntityCommonStockSharesOutstanding + CommonStockSharesOutstanding"
+      },
+      "sensitivity": [
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.1381944149732589
+        },
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.129037395119667
+        },
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.11889473497867582
+        },
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.10754200518131253
+        },
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.094667050242424
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.16407198011875146
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.15634965598583217
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.14793063700199127
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.13868595659732819
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.12844711244106288
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.18782543241977684
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.18114978969097134
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.17395428121089934
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.16615767180919644
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.15765827000141147
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.20999253690242764
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.2041144281625747
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.19783256947994227
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.19109254181385038
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.183827993273735
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.23093259036540986
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.22568207085132602
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.22010857760906222
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.21417349278926845
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.2078311830759048
+        }
+      ],
+      "history": [
+        {
+          "fiscal_year": 2007,
+          "end": "2007-09-29",
+          "cfo": 5470000000.0,
+          "capex": 735000000.0,
+          "fcf": 4735000000.0,
+          "revenue": 24578000000.0
+        },
+        {
+          "fiscal_year": 2008,
+          "end": "2008-09-27",
+          "cfo": 9596000000.0,
+          "capex": 1091000000.0,
+          "fcf": 8505000000.0,
+          "revenue": 37491000000.0
+        },
+        {
+          "fiscal_year": 2009,
+          "end": "2009-09-26",
+          "cfo": 10159000000.0,
+          "capex": 1144000000.0,
+          "fcf": 9015000000.0,
+          "revenue": 42905000000.0
+        },
+        {
+          "fiscal_year": 2010,
+          "end": "2010-09-25",
+          "cfo": 18595000000.0,
+          "capex": 2005000000.0,
+          "fcf": 16590000000.0,
+          "revenue": 65225000000.0
+        },
+        {
+          "fiscal_year": 2011,
+          "end": "2011-09-24",
+          "cfo": 37529000000.0,
+          "capex": 4260000000.0,
+          "fcf": 33269000000.0,
+          "revenue": 108249000000.0
+        },
+        {
+          "fiscal_year": 2012,
+          "end": "2012-09-29",
+          "cfo": 50856000000.0,
+          "capex": 8295000000.0,
+          "fcf": 42561000000.0,
+          "revenue": 156508000000.0
+        },
+        {
+          "fiscal_year": 2013,
+          "end": "2013-09-28",
+          "cfo": 53666000000.0,
+          "capex": 8165000000.0,
+          "fcf": 45501000000.0,
+          "revenue": 170910000000.0
+        },
+        {
+          "fiscal_year": 2014,
+          "end": "2014-09-27",
+          "cfo": 59713000000.0,
+          "capex": 9571000000.0,
+          "fcf": 50142000000.0,
+          "revenue": 182795000000.0
+        },
+        {
+          "fiscal_year": 2015,
+          "end": "2015-09-26",
+          "cfo": 81266000000.0,
+          "capex": 11247000000.0,
+          "fcf": 70019000000.0,
+          "revenue": 233715000000.0
+        },
+        {
+          "fiscal_year": 2016,
+          "end": "2016-09-24",
+          "cfo": 66231000000.0,
+          "capex": 12734000000.0,
+          "fcf": 53497000000.0,
+          "revenue": 215639000000.0
+        },
+        {
+          "fiscal_year": 2017,
+          "end": "2017-09-30",
+          "cfo": 64225000000.0,
+          "capex": 12451000000.0,
+          "fcf": 51774000000.0,
+          "revenue": 229234000000.0
+        },
+        {
+          "fiscal_year": 2018,
+          "end": "2018-09-29",
+          "cfo": 77434000000.0,
+          "capex": 13313000000.0,
+          "fcf": 64121000000.0,
+          "revenue": 265595000000.0
+        },
+        {
+          "fiscal_year": 2019,
+          "end": "2019-09-28",
+          "cfo": 69391000000.0,
+          "capex": 10495000000.0,
+          "fcf": 58896000000.0,
+          "revenue": 260174000000.0
+        },
+        {
+          "fiscal_year": 2020,
+          "end": "2020-09-26",
+          "cfo": 80674000000.0,
+          "capex": 7309000000.0,
+          "fcf": 73365000000.0,
+          "revenue": 274515000000.0
+        },
+        {
+          "fiscal_year": 2021,
+          "end": "2021-09-25",
+          "cfo": 104038000000.0,
+          "capex": 11085000000.0,
+          "fcf": 92953000000.0,
+          "revenue": 365817000000.0
+        },
+        {
+          "fiscal_year": 2022,
+          "end": "2022-09-24",
+          "cfo": 122151000000.0,
+          "capex": 10708000000.0,
+          "fcf": 111443000000.0,
+          "revenue": 394328000000.0
+        },
+        {
+          "fiscal_year": 2023,
+          "end": "2023-09-30",
+          "cfo": 110543000000.0,
+          "capex": 10959000000.0,
+          "fcf": 99584000000.0,
+          "revenue": 383285000000.0
+        },
+        {
+          "fiscal_year": 2024,
+          "end": "2024-09-28",
+          "cfo": 118254000000.0,
+          "capex": 9447000000.0,
+          "fcf": 108807000000.0,
+          "revenue": 391035000000.0
+        },
+        {
+          "fiscal_year": 2025,
+          "end": "2025-09-27",
+          "cfo": 111482000000.0,
+          "capex": 12715000000.0,
+          "fcf": 98767000000.0,
+          "revenue": 416161000000.0
+        }
+      ]
+    },
+    "MSFT": {
+      "entity": "MICROSOFT CORPORATION",
+      "price": 529.2999877929688,
+      "market_cap": 3930341137742.434,
+      "shares": 7425545491.0,
+      "net_debt": -36549000000.0,
+      "balance_sheet_date": "2026-06-30",
+      "base_fcf": 70889666666.66667,
+      "latest_fcf": 66987000000.0,
+      "fcf_multiple": 55.44307545165164,
+      "history_years": 19,
+      "first_year": 2008,
+      "last_year": 2026,
+      "implied_growth": 0.1906615167856216,
+      "realised_growth": 0.11084440611152147,
+      "growth_gap": 0.07981711067410013,
+      "terminal_value_share": 0.6944465302157209,
+      "concepts": {
+        "cfo": "NetCashProvidedByUsedInOperatingActivities + NetCashProvidedByUsedInOperatingActivitiesContinuingOperations",
+        "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+        "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax + Revenues + SalesRevenueNet",
+        "cash": "CashAndCashEquivalentsAtCarryingValue",
+        "short_term_investments": "ShortTermInvestments + AvailableForSaleSecuritiesCurrent",
+        "long_term_debt": "LongTermDebtNoncurrent",
+        "short_term_debt": "LongTermDebtCurrent + ShortTermBorrowings",
+        "shares": "EntityCommonStockSharesOutstanding + CommonStockSharesOutstanding"
+      },
+      "sensitivity": [
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.1542845517396927
+        },
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.14493267238140106
+        },
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.13457869589328764
+        },
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.12299458682537077
+        },
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.10986346900463104
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.1806456595659256
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.17275306284427638
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.16415177285671229
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.1547108560800552
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.1442589908838272
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.20484567582607266
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.198018118739128
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.1906615167856216
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.18269332349300382
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.1740103393793106
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.22743115127086638
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.22141535580158234
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.21498859822750083
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.2080954760313034
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.20066865384578703
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.24876715242862701
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.24339048564434052
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.23768481314182283
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.2316111236810684
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.22512280046939853
+        }
+      ],
+      "history": [
+        {
+          "fiscal_year": 2008,
+          "end": "2008-06-30",
+          "cfo": 21612000000.0,
+          "capex": 3182000000.0,
+          "fcf": 18430000000.0,
+          "revenue": 60420000000.0
+        },
+        {
+          "fiscal_year": 2009,
+          "end": "2009-06-30",
+          "cfo": 19037000000.0,
+          "capex": 3119000000.0,
+          "fcf": 15918000000.0,
+          "revenue": 58437000000.0
+        },
+        {
+          "fiscal_year": 2010,
+          "end": "2010-06-30",
+          "cfo": 24073000000.0,
+          "capex": 1977000000.0,
+          "fcf": 22096000000.0,
+          "revenue": 62484000000.0
+        },
+        {
+          "fiscal_year": 2011,
+          "end": "2011-06-30",
+          "cfo": 26994000000.0,
+          "capex": 2355000000.0,
+          "fcf": 24639000000.0,
+          "revenue": 69943000000.0
+        },
+        {
+          "fiscal_year": 2012,
+          "end": "2012-06-30",
+          "cfo": 31626000000.0,
+          "capex": 2305000000.0,
+          "fcf": 29321000000.0,
+          "revenue": 73723000000.0
+        },
+        {
+          "fiscal_year": 2013,
+          "end": "2013-06-30",
+          "cfo": 28833000000.0,
+          "capex": 4257000000.0,
+          "fcf": 24576000000.0,
+          "revenue": 77849000000.0
+        },
+        {
+          "fiscal_year": 2014,
+          "end": "2014-06-30",
+          "cfo": 32502000000.0,
+          "capex": 5485000000.0,
+          "fcf": 27017000000.0,
+          "revenue": 86833000000.0
+        },
+        {
+          "fiscal_year": 2015,
+          "end": "2015-06-30",
+          "cfo": 29668000000.0,
+          "capex": 5944000000.0,
+          "fcf": 23724000000.0,
+          "revenue": 93580000000.0
+        },
+        {
+          "fiscal_year": 2016,
+          "end": "2016-06-30",
+          "cfo": 33325000000.0,
+          "capex": 8343000000.0,
+          "fcf": 24982000000.0,
+          "revenue": 91154000000.0
+        },
+        {
+          "fiscal_year": 2017,
+          "end": "2017-06-30",
+          "cfo": 39507000000.0,
+          "capex": 8129000000.0,
+          "fcf": 31378000000.0,
+          "revenue": 96571000000.0
+        },
+        {
+          "fiscal_year": 2018,
+          "end": "2018-06-30",
+          "cfo": 43884000000.0,
+          "capex": 11632000000.0,
+          "fcf": 32252000000.0,
+          "revenue": 110360000000.0
+        },
+        {
+          "fiscal_year": 2019,
+          "end": "2019-06-30",
+          "cfo": 52185000000.0,
+          "capex": 13925000000.0,
+          "fcf": 38260000000.0,
+          "revenue": 125843000000.0
+        },
+        {
+          "fiscal_year": 2020,
+          "end": "2020-06-30",
+          "cfo": 60675000000.0,
+          "capex": 15441000000.0,
+          "fcf": 45234000000.0,
+          "revenue": 143015000000.0
+        },
+        {
+          "fiscal_year": 2021,
+          "end": "2021-06-30",
+          "cfo": 76740000000.0,
+          "capex": 20622000000.0,
+          "fcf": 56118000000.0,
+          "revenue": 168088000000.0
+        },
+        {
+          "fiscal_year": 2022,
+          "end": "2022-06-30",
+          "cfo": 89035000000.0,
+          "capex": 23886000000.0,
+          "fcf": 65149000000.0,
+          "revenue": 198270000000.0
+        },
+        {
+          "fiscal_year": 2023,
+          "end": "2023-06-30",
+          "cfo": 87582000000.0,
+          "capex": 28107000000.0,
+          "fcf": 59475000000.0,
+          "revenue": 211915000000.0
+        },
+        {
+          "fiscal_year": 2024,
+          "end": "2024-06-30",
+          "cfo": 118548000000.0,
+          "capex": 44477000000.0,
+          "fcf": 74071000000.0,
+          "revenue": 245122000000.0
+        },
+        {
+          "fiscal_year": 2025,
+          "end": "2025-06-30",
+          "cfo": 136162000000.0,
+          "capex": 64551000000.0,
+          "fcf": 71611000000.0,
+          "revenue": 281724000000.0
+        },
+        {
+          "fiscal_year": 2026,
+          "end": "2026-06-30",
+          "cfo": 182935000000.0,
+          "capex": 115948000000.0,
+          "fcf": 66987000000.0,
+          "revenue": 331839000000.0
+        }
+      ]
+    },
+    "NVDA": {
+      "entity": "NVIDIA CORP",
+      "price": 239.24000549316406,
+      "market_cap": 5813532133483.887,
+      "shares": 24300000000.0,
+      "net_debt": -36758000000.0,
+      "balance_sheet_date": "2026-01-25",
+      "base_fcf": 61516666666.666664,
+      "latest_fcf": 96676000000.0,
+      "fcf_multiple": 94.50336711163186,
+      "history_years": 5,
+      "first_year": 2022,
+      "last_year": 2026,
+      "implied_growth": 0.2638231307268144,
+      "realised_growth": null,
+      "growth_gap": null,
+      "terminal_value_share": 0.7374217651090307,
+      "concepts": {
+        "cfo": "NetCashProvidedByUsedInOperatingActivities",
+        "capex": "PaymentsToAcquirePropertyPlantAndEquipment + PaymentsToAcquireProductiveAssets",
+        "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax + Revenues",
+        "cash": "CashAndCashEquivalentsAtCarryingValue",
+        "short_term_investments": "MarketableSecuritiesCurrent",
+        "long_term_debt": "LongTermDebtNoncurrent + LongTermDebt",
+        "short_term_debt": "LongTermDebtCurrent",
+        "shares": "EntityCommonStockSharesOutstanding + CommonStockSharesOutstanding"
+      },
+      "sensitivity": [
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.22478494346141814
+        },
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.21460530459880828
+        },
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.20335262715816493
+        },
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.19078399240970612
+        },
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.17656180560588836
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.2532198756933212
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.24460435807704928
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.2352288752794266
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.2249537736177445
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.21359645426273344
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.2793357700109481
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.2718635767698288
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.2638231307268144
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.2551265746355056
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.24566349685192101
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.3037168115377425
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.29711709320545193
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.29007553160190586
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.28253279030323025
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.2744170755147934
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.32675330936908714
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.3208415657281875
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.3145756393671036
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.3079136341810225
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.3008059173822402
+        }
+      ],
+      "history": [
+        {
+          "fiscal_year": 2022,
+          "end": "2022-01-30",
+          "cfo": 9108000000.0,
+          "capex": 976000000.0,
+          "fcf": 8132000000.0,
+          "revenue": 26914000000.0
+        },
+        {
+          "fiscal_year": 2023,
+          "end": "2023-01-29",
+          "cfo": 5641000000.0,
+          "capex": 1833000000.0,
+          "fcf": 3808000000.0,
+          "revenue": 26974000000.0
+        },
+        {
+          "fiscal_year": 2024,
+          "end": "2024-01-28",
+          "cfo": 28090000000.0,
+          "capex": 1069000000.0,
+          "fcf": 27021000000.0,
+          "revenue": 60922000000.0
+        },
+        {
+          "fiscal_year": 2025,
+          "end": "2025-01-26",
+          "cfo": 64089000000.0,
+          "capex": 3236000000.0,
+          "fcf": 60853000000.0,
+          "revenue": 130497000000.0
+        },
+        {
+          "fiscal_year": 2026,
+          "end": "2026-01-25",
+          "cfo": 102718000000.0,
+          "capex": 6042000000.0,
+          "fcf": 96676000000.0,
+          "revenue": 215938000000.0
+        }
+      ]
+    },
+    "GOOGL": {
+      "entity": "Alphabet Inc.",
+      "price": 347.67999267578125,
+      "market_cap": 4202755751464.8438,
+      "shares": 12088000000.0,
+      "net_debt": -78300000000.0,
+      "balance_sheet_date": "2025-12-31",
+      "base_fcf": 71841666666.66667,
+      "latest_fcf": 73266000000.0,
+      "fcf_multiple": 58.500254051244774,
+      "history_years": 13,
+      "first_year": 2013,
+      "last_year": 2025,
+      "implied_growth": 0.1966187626123428,
+      "realised_growth": 0.16826225732015154,
+      "growth_gap": 0.028356505292191247,
+      "terminal_value_share": 0.6984147433685441,
+      "concepts": {
+        "cfo": "NetCashProvidedByUsedInOperatingActivities",
+        "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+        "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax + Revenues",
+        "cash": "CashAndCashEquivalentsAtCarryingValue",
+        "short_term_investments": "MarketableSecuritiesCurrent + AvailableForSaleSecuritiesCurrent",
+        "long_term_debt": "LongTermDebtNoncurrent + LongTermDebt",
+        "short_term_debt": "LongTermDebtCurrent + DebtCurrent",
+        "shares": "CommonStockSharesOutstanding"
+      },
+      "sensitivity": [
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.16002267897129058
+        },
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.15060195624828332
+        },
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.1401732355356216
+        },
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.12850723564624783
+        },
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.11528544127941129
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.18655530512332913
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.1786024540662765
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.16993671357631684
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.16042636334896082
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.14989922940731049
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.21091359555721279
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.20403234064579007
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.1966187626123428
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.18858998715877529
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.17984202802181243
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.23364744484424593
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.22758300006389615
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.221104970574379
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.21415775716304775
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.20667353272438044
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.2551238864660262
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.2497026354074478
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.24395028054714202
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.2378275483846664
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.23128762543201448
+        }
+      ],
+      "history": [
+        {
+          "fiscal_year": 2013,
+          "end": "2013-12-31",
+          "cfo": 18659000000.0,
+          "capex": 7358000000.0,
+          "fcf": 11301000000.0,
+          "revenue": 55519000000.0
+        },
+        {
+          "fiscal_year": 2014,
+          "end": "2014-12-31",
+          "cfo": 23024000000.0,
+          "capex": 11014000000.0,
+          "fcf": 12010000000.0,
+          "revenue": 66001000000.0
+        },
+        {
+          "fiscal_year": 2015,
+          "end": "2015-12-31",
+          "cfo": 26572000000.0,
+          "capex": 9950000000.0,
+          "fcf": 16622000000.0,
+          "revenue": 74989000000.0
+        },
+        {
+          "fiscal_year": 2016,
+          "end": "2016-12-31",
+          "cfo": 36036000000.0,
+          "capex": 10212000000.0,
+          "fcf": 25824000000.0,
+          "revenue": 90272000000.0
+        },
+        {
+          "fiscal_year": 2017,
+          "end": "2017-12-31",
+          "cfo": 37091000000.0,
+          "capex": 13184000000.0,
+          "fcf": 23907000000.0,
+          "revenue": 110855000000.0
+        },
+        {
+          "fiscal_year": 2018,
+          "end": "2018-12-31",
+          "cfo": 47971000000.0,
+          "capex": 25139000000.0,
+          "fcf": 22832000000.0,
+          "revenue": 136819000000.0
+        },
+        {
+          "fiscal_year": 2019,
+          "end": "2019-12-31",
+          "cfo": 54520000000.0,
+          "capex": 23548000000.0,
+          "fcf": 30972000000.0,
+          "revenue": 161857000000.0
+        },
+        {
+          "fiscal_year": 2020,
+          "end": "2020-12-31",
+          "cfo": 65124000000.0,
+          "capex": 22281000000.0,
+          "fcf": 42843000000.0,
+          "revenue": 182527000000.0
+        },
+        {
+          "fiscal_year": 2021,
+          "end": "2021-12-31",
+          "cfo": 91652000000.0,
+          "capex": 24640000000.0,
+          "fcf": 67012000000.0,
+          "revenue": 257637000000.0
+        },
+        {
+          "fiscal_year": 2022,
+          "end": "2022-12-31",
+          "cfo": 91495000000.0,
+          "capex": 31485000000.0,
+          "fcf": 60010000000.0,
+          "revenue": 282836000000.0
+        },
+        {
+          "fiscal_year": 2023,
+          "end": "2023-12-31",
+          "cfo": 101746000000.0,
+          "capex": 32251000000.0,
+          "fcf": 69495000000.0,
+          "revenue": 307394000000.0
+        },
+        {
+          "fiscal_year": 2024,
+          "end": "2024-12-31",
+          "cfo": 125299000000.0,
+          "capex": 52535000000.0,
+          "fcf": 72764000000.0,
+          "revenue": 350018000000.0
+        },
+        {
+          "fiscal_year": 2025,
+          "end": "2025-12-31",
+          "cfo": 164713000000.0,
+          "capex": 91447000000.0,
+          "fcf": 73266000000.0,
+          "revenue": 402836000000.0
+        }
+      ]
+    },
+    "JNJ": {
+      "entity": "Johnson & Johnson",
+      "price": 254.77999877929688,
+      "market_cap": 613994047972.3088,
+      "shares": 2409898936.0,
+      "net_debt": 21336000000.0,
+      "balance_sheet_date": "2025-12-28",
+      "base_fcf": 19262666666.666668,
+      "latest_fcf": 19698000000.0,
+      "fcf_multiple": 31.874820791806712,
+      "history_years": 19,
+      "first_year": 2007,
+      "last_year": 2025,
+      "implied_growth": 0.12262827455997465,
+      "realised_growth": 0.015612839824760805,
+      "growth_gap": 0.10701543473521384,
+      "terminal_value_share": 0.6421290203892688,
+      "concepts": {
+        "cfo": "NetCashProvidedByUsedInOperatingActivities",
+        "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+        "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "cash": "CashAndCashEquivalentsAtCarryingValue",
+        "short_term_investments": "MarketableSecuritiesCurrent + AvailableForSaleSecuritiesCurrent",
+        "long_term_debt": "LongTermDebtNoncurrent",
+        "short_term_debt": "LongTermDebtCurrent + DebtCurrent + ShortTermBorrowings",
+        "shares": "EntityCommonStockSharesOutstanding"
+      },
+      "sensitivity": [
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.08879051506519317
+        },
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.08024816811084744
+        },
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.0707721084356308
+        },
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.060148724913597074
+        },
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.048080876469612094
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.11315457522869109
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.10596981942653654
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.09812606871128075
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.08950071632862087
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.07993352115154263
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.13551090061664578
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.12931512892246244
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.12262827455997465
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.11537329852581024
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.10745349228382108
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.15637004673480986
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.15092670023441312
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.14510255157947544
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.13884593546390533
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.13209390938282012
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.17607255876064298
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.17122060954570767
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.16606437265872953
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.16056732833385462
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.1546862035989761
+        }
+      ],
+      "history": [
+        {
+          "fiscal_year": 2007,
+          "end": "2007-12-30",
+          "cfo": 15022000000.0,
+          "capex": 2942000000.0,
+          "fcf": 12080000000.0,
+          "revenue": NaN
+        },
+        {
+          "fiscal_year": 2008,
+          "end": "2008-12-28",
+          "cfo": 14972000000.0,
+          "capex": 3066000000.0,
+          "fcf": 11906000000.0,
+          "revenue": NaN
+        },
+        {
+          "fiscal_year": 2009,
+          "end": "2010-01-03",
+          "cfo": 16571000000.0,
+          "capex": 2365000000.0,
+          "fcf": 14206000000.0,
+          "revenue": NaN
+        },
+        {
+          "fiscal_year": 2010,
+          "end": "2011-01-02",
+          "cfo": 16385000000.0,
+          "capex": 2384000000.0,
+          "fcf": 14001000000.0,
+          "revenue": NaN
+        },
+        {
+          "fiscal_year": 2011,
+          "end": "2012-01-01",
+          "cfo": 14298000000.0,
+          "capex": 2893000000.0,
+          "fcf": 11405000000.0,
+          "revenue": NaN
+        },
+        {
+          "fiscal_year": 2012,
+          "end": "2012-12-30",
+          "cfo": 15396000000.0,
+          "capex": 2934000000.0,
+          "fcf": 12462000000.0,
+          "revenue": NaN
+        },
+        {
+          "fiscal_year": 2013,
+          "end": "2013-12-29",
+          "cfo": 17414000000.0,
+          "capex": 3595000000.0,
+          "fcf": 13819000000.0,
+          "revenue": NaN
+        },
+        {
+          "fiscal_year": 2014,
+          "end": "2014-12-28",
+          "cfo": 18710000000.0,
+          "capex": 3714000000.0,
+          "fcf": 14996000000.0,
+          "revenue": NaN
+        },
+        {
+          "fiscal_year": 2015,
+          "end": "2016-01-03",
+          "cfo": 19569000000.0,
+          "capex": 3463000000.0,
+          "fcf": 16106000000.0,
+          "revenue": NaN
+        },
+        {
+          "fiscal_year": 2016,
+          "end": "2017-01-01",
+          "cfo": 18767000000.0,
+          "capex": 3226000000.0,
+          "fcf": 15541000000.0,
+          "revenue": 71890000000.0
+        },
+        {
+          "fiscal_year": 2017,
+          "end": "2017-12-31",
+          "cfo": 21056000000.0,
+          "capex": 3279000000.0,
+          "fcf": 17777000000.0,
+          "revenue": 76450000000.0
+        },
+        {
+          "fiscal_year": 2018,
+          "end": "2018-12-30",
+          "cfo": 22201000000.0,
+          "capex": 3670000000.0,
+          "fcf": 18531000000.0,
+          "revenue": 81581000000.0
+        },
+        {
+          "fiscal_year": 2019,
+          "end": "2019-12-29",
+          "cfo": 23416000000.0,
+          "capex": 3498000000.0,
+          "fcf": 19918000000.0,
+          "revenue": 82059000000.0
+        },
+        {
+          "fiscal_year": 2020,
+          "end": "2021-01-03",
+          "cfo": 23536000000.0,
+          "capex": 3347000000.0,
+          "fcf": 20189000000.0,
+          "revenue": 82584000000.0
+        },
+        {
+          "fiscal_year": 2021,
+          "end": "2022-01-02",
+          "cfo": 23410000000.0,
+          "capex": 3652000000.0,
+          "fcf": 19758000000.0,
+          "revenue": 78740000000.0
+        },
+        {
+          "fiscal_year": 2022,
+          "end": "2023-01-01",
+          "cfo": 21194000000.0,
+          "capex": 4009000000.0,
+          "fcf": 17185000000.0,
+          "revenue": 79990000000.0
+        },
+        {
+          "fiscal_year": 2023,
+          "end": "2023-12-31",
+          "cfo": 22791000000.0,
+          "capex": 4543000000.0,
+          "fcf": 18248000000.0,
+          "revenue": 85159000000.0
+        },
+        {
+          "fiscal_year": 2024,
+          "end": "2024-12-29",
+          "cfo": 24266000000.0,
+          "capex": 4424000000.0,
+          "fcf": 19842000000.0,
+          "revenue": 88821000000.0
+        },
+        {
+          "fiscal_year": 2025,
+          "end": "2025-12-28",
+          "cfo": 24530000000.0,
+          "capex": 4832000000.0,
+          "fcf": 19698000000.0,
+          "revenue": 94193000000.0
+        }
+      ]
+    },
+    "KO": {
+      "entity": "COCA COLA CO",
+      "price": 86.16999816894531,
+      "market_cap": 370593298980.87085,
+      "shares": 4300723069.0,
+      "net_debt": 24889000000.0,
+      "balance_sheet_date": "2025-12-31",
+      "base_fcf": 6594666666.666667,
+      "latest_fcf": 5296000000.0,
+      "fcf_multiple": 56.19591068250164,
+      "history_years": 19,
+      "first_year": 2007,
+      "last_year": 2025,
+      "implied_growth": 0.20250808298587797,
+      "realised_growth": 0.014398794961137718,
+      "growth_gap": 0.18810928802474025,
+      "terminal_value_share": 0.7022494688323644,
+      "concepts": {
+        "cfo": "NetCashProvidedByUsedInOperatingActivities",
+        "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+        "revenue": "Revenues",
+        "cash": "CashAndCashEquivalentsAtCarryingValue",
+        "short_term_investments": "MarketableSecuritiesCurrent",
+        "long_term_debt": "LongTermDebtNoncurrent",
+        "short_term_debt": "LongTermDebtCurrent",
+        "shares": "EntityCommonStockSharesOutstanding"
+      },
+      "sensitivity": [
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.16569583117961878
+        },
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.15620724856853485
+        },
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.14570496380329134
+        },
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.13395831882953646
+        },
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.12064729034900663
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.1923974186182022
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.18438536226749414
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.1756561547517776
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.16607748568058012
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.15547613203525545
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.21691188514232634
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.20997778475284573
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.20250808298587797
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.19441957771778107
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.1856076925992965
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.23979194462299347
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.2336796373128891
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.22715118825435637
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.2201506704092026
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.21260996162891388
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.2614068597555161
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.25594174563884736
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.25014342963695524
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.24397237598896027
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.23738170564174654
+        }
+      ],
+      "history": [
+        {
+          "fiscal_year": 2007,
+          "end": "2007-12-31",
+          "cfo": 7150000000.0,
+          "capex": 1648000000.0,
+          "fcf": 5502000000.0,
+          "revenue": NaN
+        },
+        {
+          "fiscal_year": 2008,
+          "end": "2008-12-31",
+          "cfo": 7571000000.0,
+          "capex": 1968000000.0,
+          "fcf": 5603000000.0,
+          "revenue": NaN
+        },
+        {
+          "fiscal_year": 2009,
+          "end": "2009-12-31",
+          "cfo": 8186000000.0,
+          "capex": 1993000000.0,
+          "fcf": 6193000000.0,
+          "revenue": NaN
+        },
+        {
+          "fiscal_year": 2010,
+          "end": "2010-12-31",
+          "cfo": 9532000000.0,
+          "capex": 2215000000.0,
+          "fcf": 7317000000.0,
+          "revenue": NaN
+        },
+        {
+          "fiscal_year": 2011,
+          "end": "2011-12-31",
+          "cfo": 9474000000.0,
+          "capex": 2920000000.0,
+          "fcf": 6554000000.0,
+          "revenue": NaN
+        },
+        {
+          "fiscal_year": 2012,
+          "end": "2012-12-31",
+          "cfo": 10645000000.0,
+          "capex": 2780000000.0,
+          "fcf": 7865000000.0,
+          "revenue": NaN
+        },
+        {
+          "fiscal_year": 2013,
+          "end": "2013-12-31",
+          "cfo": 10542000000.0,
+          "capex": 2550000000.0,
+          "fcf": 7992000000.0,
+          "revenue": NaN
+        },
+        {
+          "fiscal_year": 2014,
+          "end": "2014-12-31",
+          "cfo": 10615000000.0,
+          "capex": 2406000000.0,
+          "fcf": 8209000000.0,
+          "revenue": NaN
+        },
+        {
+          "fiscal_year": 2015,
+          "end": "2015-12-31",
+          "cfo": 10528000000.0,
+          "capex": 2553000000.0,
+          "fcf": 7975000000.0,
+          "revenue": NaN
+        },
+        {
+          "fiscal_year": 2016,
+          "end": "2016-12-31",
+          "cfo": 8792000000.0,
+          "capex": 2262000000.0,
+          "fcf": 6530000000.0,
+          "revenue": 41863000000.0
+        },
+        {
+          "fiscal_year": 2017,
+          "end": "2017-12-31",
+          "cfo": 7041000000.0,
+          "capex": 1750000000.0,
+          "fcf": 5291000000.0,
+          "revenue": 36212000000.0
+        },
+        {
+          "fiscal_year": 2018,
+          "end": "2018-12-31",
+          "cfo": 7627000000.0,
+          "capex": 1548000000.0,
+          "fcf": 6079000000.0,
+          "revenue": 34300000000.0
+        },
+        {
+          "fiscal_year": 2019,
+          "end": "2019-12-31",
+          "cfo": 10471000000.0,
+          "capex": 2054000000.0,
+          "fcf": 8417000000.0,
+          "revenue": 37266000000.0
+        },
+        {
+          "fiscal_year": 2020,
+          "end": "2020-12-31",
+          "cfo": 9844000000.0,
+          "capex": 1177000000.0,
+          "fcf": 8667000000.0,
+          "revenue": 33014000000.0
+        },
+        {
+          "fiscal_year": 2021,
+          "end": "2021-12-31",
+          "cfo": 12625000000.0,
+          "capex": 1367000000.0,
+          "fcf": 11258000000.0,
+          "revenue": 38655000000.0
+        },
+        {
+          "fiscal_year": 2022,
+          "end": "2022-12-31",
+          "cfo": 11018000000.0,
+          "capex": 1484000000.0,
+          "fcf": 9534000000.0,
+          "revenue": 43004000000.0
+        },
+        {
+          "fiscal_year": 2023,
+          "end": "2023-12-31",
+          "cfo": 11599000000.0,
+          "capex": 1852000000.0,
+          "fcf": 9747000000.0,
+          "revenue": 45754000000.0
+        },
+        {
+          "fiscal_year": 2024,
+          "end": "2024-12-31",
+          "cfo": 6805000000.0,
+          "capex": 2064000000.0,
+          "fcf": 4741000000.0,
+          "revenue": 47061000000.0
+        },
+        {
+          "fiscal_year": 2025,
+          "end": "2025-12-31",
+          "cfo": 7408000000.0,
+          "capex": 2112000000.0,
+          "fcf": 5296000000.0,
+          "revenue": 47941000000.0
+        }
+      ]
+    },
+    "XOM": {
+      "entity": "Exxon Mobil Corporation",
+      "price": 164.47999572753906,
+      "market_cap": 685349234947.106,
+      "shares": 4166763453.0,
+      "net_debt": 18617000000.0,
+      "balance_sheet_date": "2025-12-31",
+      "base_fcf": 29259333333.333332,
+      "latest_fcf": 23612000000.0,
+      "fcf_multiple": 23.423268983587207,
+      "history_years": 19,
+      "first_year": 2007,
+      "last_year": 2025,
+      "implied_growth": 0.08093470036983486,
+      "realised_growth": 0.1312514619644587,
+      "growth_gap": -0.05031676159462384,
+      "terminal_value_share": 0.6029101935189927,
+      "concepts": {
+        "cfo": "NetCashProvidedByUsedInOperatingActivities + NetCashProvidedByUsedInOperatingActivitiesContinuingOperations",
+        "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+        "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax + Revenues",
+        "cash": "CashAndCashEquivalentsAtCarryingValue",
+        "short_term_investments": "MarketableSecuritiesCurrent",
+        "long_term_debt": "LongTermDebtNoncurrent",
+        "short_term_debt": "LongTermDebtCurrent + DebtCurrent",
+        "shares": "EntityCommonStockSharesOutstanding + CommonStockSharesOutstanding"
+      },
+      "sensitivity": [
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.048691877722740154
+        },
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.040669658780097956
+        },
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.03175739347934722
+        },
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.02175045311450957
+        },
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.010364088416099537
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.07179072797298432
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.06506112515926359
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.057704326510429366
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.04960303604602813
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.040603831410408006
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.09298012554645535
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.08719072639942166
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.08093470036983486
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.07413828670978544
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.06670910418033599
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.11274780929088592
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.10767267644405365
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.10223621428012845
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.0963889867067337
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.09007093608379362
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.13141865432262417
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.1269041031599044
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.1221012622117996
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.1169751852750778
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.11148463189601897
+        }
+      ],
+      "history": [
+        {
+          "fiscal_year": 2007,
+          "end": "2007-12-31",
+          "cfo": 52002000000.0,
+          "capex": 15387000000.0,
+          "fcf": 36615000000.0,
+          "revenue": NaN
+        },
+        {
+          "fiscal_year": 2008,
+          "end": "2008-12-31",
+          "cfo": 59725000000.0,
+          "capex": 19318000000.0,
+          "fcf": 40407000000.0,
+          "revenue": NaN
+        },
+        {
+          "fiscal_year": 2009,
+          "end": "2009-12-31",
+          "cfo": 28438000000.0,
+          "capex": 22491000000.0,
+          "fcf": 5947000000.0,
+          "revenue": 301500000000.0
+        },
+        {
+          "fiscal_year": 2010,
+          "end": "2010-12-31",
+          "cfo": 48413000000.0,
+          "capex": 26871000000.0,
+          "fcf": 21542000000.0,
+          "revenue": 370125000000.0
+        },
+        {
+          "fiscal_year": 2011,
+          "end": "2011-12-31",
+          "cfo": 55345000000.0,
+          "capex": 30975000000.0,
+          "fcf": 24370000000.0,
+          "revenue": 467029000000.0
+        },
+        {
+          "fiscal_year": 2012,
+          "end": "2012-12-31",
+          "cfo": 56170000000.0,
+          "capex": 34271000000.0,
+          "fcf": 21899000000.0,
+          "revenue": 451509000000.0
+        },
+        {
+          "fiscal_year": 2013,
+          "end": "2013-12-31",
+          "cfo": 44914000000.0,
+          "capex": 33669000000.0,
+          "fcf": 11245000000.0,
+          "revenue": 420836000000.0
+        },
+        {
+          "fiscal_year": 2014,
+          "end": "2014-12-31",
+          "cfo": 45116000000.0,
+          "capex": 32952000000.0,
+          "fcf": 12164000000.0,
+          "revenue": 394105000000.0
+        },
+        {
+          "fiscal_year": 2015,
+          "end": "2015-12-31",
+          "cfo": 30344000000.0,
+          "capex": 26490000000.0,
+          "fcf": 3854000000.0,
+          "revenue": 239854000000.0
+        },
+        {
+          "fiscal_year": 2016,
+          "end": "2016-12-31",
+          "cfo": 22082000000.0,
+          "capex": 16163000000.0,
+          "fcf": 5919000000.0,
+          "revenue": 200628000000.0
+        },
+        {
+          "fiscal_year": 2017,
+          "end": "2017-12-31",
+          "cfo": 30066000000.0,
+          "capex": 15402000000.0,
+          "fcf": 14664000000.0,
+          "revenue": 237162000000.0
+        },
+        {
+          "fiscal_year": 2018,
+          "end": "2018-12-31",
+          "cfo": 36014000000.0,
+          "capex": 19574000000.0,
+          "fcf": 16440000000.0,
+          "revenue": 279332000000.0
+        },
+        {
+          "fiscal_year": 2019,
+          "end": "2019-12-31",
+          "cfo": 29716000000.0,
+          "capex": 24361000000.0,
+          "fcf": 5355000000.0,
+          "revenue": 255583000000.0
+        },
+        {
+          "fiscal_year": 2020,
+          "end": "2020-12-31",
+          "cfo": 14668000000.0,
+          "capex": 17282000000.0,
+          "fcf": -2614000000.0,
+          "revenue": 178574000000.0
+        },
+        {
+          "fiscal_year": 2021,
+          "end": "2021-12-31",
+          "cfo": 48129000000.0,
+          "capex": 12076000000.0,
+          "fcf": 36053000000.0,
+          "revenue": 276692000000.0
+        },
+        {
+          "fiscal_year": 2022,
+          "end": "2022-12-31",
+          "cfo": 76797000000.0,
+          "capex": 18407000000.0,
+          "fcf": 58390000000.0,
+          "revenue": 413680000000.0
+        },
+        {
+          "fiscal_year": 2023,
+          "end": "2023-12-31",
+          "cfo": 55369000000.0,
+          "capex": 21919000000.0,
+          "fcf": 33450000000.0,
+          "revenue": 344582000000.0
+        },
+        {
+          "fiscal_year": 2024,
+          "end": "2024-12-31",
+          "cfo": 55022000000.0,
+          "capex": 24306000000.0,
+          "fcf": 30716000000.0,
+          "revenue": 349585000000.0
+        },
+        {
+          "fiscal_year": 2025,
+          "end": "2025-12-31",
+          "cfo": 51970000000.0,
+          "capex": 28358000000.0,
+          "fcf": 23612000000.0,
+          "revenue": 332238000000.0
+        }
+      ]
+    },
+    "WMT": {
+      "entity": "WALMART INC.",
+      "price": 107.19999694824219,
+      "market_cap": 854641523777.3584,
+      "shares": 7972402501.0,
+      "net_debt": 27439000000.0,
+      "balance_sheet_date": "2026-01-31",
+      "base_fcf": 14234333333.333334,
+      "latest_fcf": 14923000000.0,
+      "fcf_multiple": 60.04085360120074,
+      "history_years": 19,
+      "first_year": 2008,
+      "last_year": 2026,
+      "implied_growth": 0.20694192349910728,
+      "realised_growth": -0.0398100243651579,
+      "growth_gap": 0.2467519478642652,
+      "terminal_value_share": 0.705079758038624,
+      "concepts": {
+        "cfo": "NetCashProvidedByUsedInOperatingActivities",
+        "capex": "PaymentsToAcquirePropertyPlantAndEquipment",
+        "revenue": "RevenueFromContractWithCustomerExcludingAssessedTax + Revenues",
+        "cash": "CashAndCashEquivalentsAtCarryingValue",
+        "short_term_investments": null,
+        "long_term_debt": "LongTermDebtNoncurrent",
+        "short_term_debt": "LongTermDebtCurrent",
+        "shares": "EntityCommonStockSharesOutstanding + CommonStockSharesOutstanding"
+      },
+      "sensitivity": [
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.1699672669172287
+        },
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.1604278057813644
+        },
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.14987024962902068
+        },
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.13806315362453458
+        },
+        {
+          "discount_rate": 0.07,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.1246851176023483
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.1967957884073257
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.188739213347435
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.17996247112751007
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.1703324645757675
+        },
+        {
+          "discount_rate": 0.08,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.15967551171779626
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.22142748534679407
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.21445365250110626
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.20694192349910728
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.19880863726139064
+        },
+        {
+          "discount_rate": 0.09,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.18994882404804225
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.24441736638545986
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.23826912939548495
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.23170284926891327
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.2246624022722244
+        },
+        {
+          "discount_rate": 0.1,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.21707933843135835
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.015,
+          "implied_growth": 0.26613626778125754
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.02,
+          "implied_growth": 0.2606382399797439
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.025,
+          "implied_growth": 0.25480543673038486
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.03,
+          "implied_growth": 0.2485982567071915
+        },
+        {
+          "discount_rate": 0.11,
+          "terminal_growth": 0.035,
+          "implied_growth": 0.2419694274663925
+        }
+      ],
+      "history": [
+        {
+          "fiscal_year": 2008,
+          "end": "2008-01-31",
+          "cfo": 20642000000.0,
+          "capex": 14937000000.0,
+          "fcf": 5705000000.0,
+          "revenue": 377023000000.0
+        },
+        {
+          "fiscal_year": 2009,
+          "end": "2009-01-31",
+          "cfo": 23147000000.0,
+          "capex": 11499000000.0,
+          "fcf": 11648000000.0,
+          "revenue": 404254000000.0
+        },
+        {
+          "fiscal_year": 2010,
+          "end": "2010-01-31",
+          "cfo": 26249000000.0,
+          "capex": 12184000000.0,
+          "fcf": 14065000000.0,
+          "revenue": 408085000000.0
+        },
+        {
+          "fiscal_year": 2011,
+          "end": "2011-01-31",
+          "cfo": 23643000000.0,
+          "capex": 12699000000.0,
+          "fcf": 10944000000.0,
+          "revenue": 421849000000.0
+        },
+        {
+          "fiscal_year": 2012,
+          "end": "2012-01-31",
+          "cfo": 24255000000.0,
+          "capex": 13510000000.0,
+          "fcf": 10745000000.0,
+          "revenue": 446509000000.0
+        },
+        {
+          "fiscal_year": 2013,
+          "end": "2013-01-31",
+          "cfo": 25591000000.0,
+          "capex": 12898000000.0,
+          "fcf": 12693000000.0,
+          "revenue": 468651000000.0
+        },
+        {
+          "fiscal_year": 2014,
+          "end": "2014-01-31",
+          "cfo": 23257000000.0,
+          "capex": 13115000000.0,
+          "fcf": 10142000000.0,
+          "revenue": 476294000000.0
+        },
+        {
+          "fiscal_year": 2015,
+          "end": "2015-01-31",
+          "cfo": 28564000000.0,
+          "capex": 12174000000.0,
+          "fcf": 16390000000.0,
+          "revenue": 485651000000.0
+        },
+        {
+          "fiscal_year": 2016,
+          "end": "2016-01-31",
+          "cfo": 27552000000.0,
+          "capex": 11477000000.0,
+          "fcf": 16075000000.0,
+          "revenue": 482130000000.0
+        },
+        {
+          "fiscal_year": 2017,
+          "end": "2017-01-31",
+          "cfo": 31673000000.0,
+          "capex": 10619000000.0,
+          "fcf": 21054000000.0,
+          "revenue": 481317000000.0
+        },
+        {
+          "fiscal_year": 2018,
+          "end": "2018-01-31",
+          "cfo": 28337000000.0,
+          "capex": 10051000000.0,
+          "fcf": 18286000000.0,
+          "revenue": 495761000000.0
+        },
+        {
+          "fiscal_year": 2019,
+          "end": "2019-01-31",
+          "cfo": 27753000000.0,
+          "capex": 10344000000.0,
+          "fcf": 17409000000.0,
+          "revenue": 510329000000.0
+        },
+        {
+          "fiscal_year": 2020,
+          "end": "2020-01-31",
+          "cfo": 25255000000.0,
+          "capex": 10705000000.0,
+          "fcf": 14550000000.0,
+          "revenue": 519926000000.0
+        },
+        {
+          "fiscal_year": 2021,
+          "end": "2021-01-31",
+          "cfo": 36074000000.0,
+          "capex": 10264000000.0,
+          "fcf": 25810000000.0,
+          "revenue": 555233000000.0
+        },
+        {
+          "fiscal_year": 2022,
+          "end": "2022-01-31",
+          "cfo": 24181000000.0,
+          "capex": 13106000000.0,
+          "fcf": 11075000000.0,
+          "revenue": 567762000000.0
+        },
+        {
+          "fiscal_year": 2023,
+          "end": "2023-01-31",
+          "cfo": 28841000000.0,
+          "capex": 16857000000.0,
+          "fcf": 11984000000.0,
+          "revenue": 605881000000.0
+        },
+        {
+          "fiscal_year": 2024,
+          "end": "2024-01-31",
+          "cfo": 35726000000.0,
+          "capex": 20606000000.0,
+          "fcf": 15120000000.0,
+          "revenue": 642637000000.0
+        },
+        {
+          "fiscal_year": 2025,
+          "end": "2025-01-31",
+          "cfo": 36443000000.0,
+          "capex": 23783000000.0,
+          "fcf": 12660000000.0,
+          "revenue": 674538000000.0
+        },
+        {
+          "fiscal_year": 2026,
+          "end": "2026-01-31",
+          "cfo": 41565000000.0,
+          "capex": 26642000000.0,
+          "fcf": 14923000000.0,
+          "revenue": 706413000000.0
+        }
+      ]
+    }
+  },
+  "excluded": {}
+}

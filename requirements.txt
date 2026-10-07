@@ -1,0 +1,6 @@
+# Requires Python 3.10+
+requests>=2.31      # SEC EDGAR
+pandas>=2.0
+numpy>=1.26
+yfinance>=0.2.60    # current prices only; all financials come from filings
+matplotlib>=3.8
