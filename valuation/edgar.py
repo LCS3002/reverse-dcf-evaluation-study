@@ -145,21 +145,43 @@ def _annual_observations(fact: dict) -> list[dict]:
 
 
 def extract(facts: dict, metric: str) -> tuple[list[dict], str | None]:
-    """Annual series for `metric`, plus the concept that supplied it.
+    """Annual series for `metric`, merged across every candidate concept.
 
-    Returning the concept name is the point: which tag a company used is a judgement the
-    reader should be able to check, not something buried in a lookup table.
+    Merging rather than first-match matters more than it looks. Companies switch tags
+    mid-history: NVIDIA reports capital expenditure as
+    `PaymentsToAcquirePropertyPlantAndEquipment` until 2012 and
+    `PaymentsToAcquireProductiveAssets` from 2022. Taking the first concept that returns
+    anything picked the three-year stub and silently produced a free cash flow history
+    that was wrong by two orders of magnitude — while looking perfectly well-formed.
+
+    Where two concepts cover the same year, the one earlier in the candidate list wins,
+    so the ordering expresses preference rather than mere availability. The returned label
+    names every concept that contributed, because which tags a company used across its
+    history is something a reader should be able to audit.
     """
     if metric not in CONCEPTS:
         raise KeyError(f"unknown metric {metric!r}")
+
+    merged: dict[str, dict] = {}
+    used: list[str] = []
 
     for taxonomy, concept in CONCEPTS[metric]:
         block = facts.get("facts", {}).get(taxonomy, {}).get(concept)
         if not block:
             continue
-        observations = _annual_observations(block)
-        if observations:
-            return observations, f"{taxonomy}:{concept}"
+        contributed = False
+        for observation in _annual_observations(block):
+            if observation["end"] not in merged:   # earlier candidates take precedence
+                merged[observation["end"]] = observation
+                contributed = True
+        if contributed:
+            used.append(concept)
 
-    logger.warning("No data for metric %r in any candidate concept", metric)
-    return [], None
+    if not merged:
+        logger.warning("No data for metric %r in any candidate concept", metric)
+        return [], None
+
+    return (
+        sorted(merged.values(), key=lambda e: e["end"]),
+        " + ".join(used),
+    )
